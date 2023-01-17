@@ -166,7 +166,7 @@ def save_to_csv(cat, endtime, counter, header, lookBack):
                     event_df.to_csv(f"catalog/{header[i]}.txt", header=None, index=None, sep=' ', mode='a')
                 
 
-                # Trigger is set to 1, check for duplicate events the write to txt file
+                # Trigger is set to 1, check for duplicate events then write to txt file
                 else:
 
                     #dups = 0       # List that contains previously captured event times                    
